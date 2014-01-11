@@ -33,7 +33,7 @@ crazySimpleParse.recursing = (obj) ->
 				# for attributes
 				for i in [2..obj[prop].length - 1] by 2
 					attributes += " #{obj[prop][i]}=\"#{obj[prop][i + 1]}\""
-				html += """  <input value="#{obj[prop][1]}"#{attributes}>\n"""
+				html += """  <input name="#{prop}" value="#{obj[prop][1]}"#{attributes}>\n"""
 		# if element is a sub group
 		else if obj[prop] instanceof Object
 			@recurse obj[prop], prop
