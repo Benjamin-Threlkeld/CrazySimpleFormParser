@@ -7,14 +7,14 @@
 	<script>
 		options = {
 			// first is the index second is the value third is placeholder
-			title: ["input", "value", "type", "text", "name", "myName"],
+			title: ["input", "title test", "type", "text" "placeholder", "Title"],
 			// if it is a select then the first index the element second is the selected option and then every other is the option text the next one is the value for that option
 			category: ["select", "opt2", "opt1", "val1", "opt2", "val2", "opt3", "val3"],
 			location: {
-				lat: ["input", "", "name", "Lat"],
-				lon: ["input", "", "name", "Lon"]
+				lat: ["input", "", "type", "text", "placeholder", "Lat"],
+				lon: ["input", "", "type", "text", "placeholder", "Lon"]
 			}
-		}
+		};
 
 		var html = crazySimpleParse(options);
 
